@@ -87,10 +87,37 @@ nav{
     margin-top: 30px;
     
 }
-.about_container img{
-    width: 202px;
-    height: 202px;
-    background: url(../img/p2.png) none no-repeat,url("../img/doski.jpg") center no-repeat;
+.about_container a{
     
-    
+    text-align: center;
+    border: 2px solid #6d7682;
+   /* background: url(../img/ik.png) no-repeat;*/
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0px auto;
+    position: absolute;
 }
+.skills_container h2{
+    display: block;
+    text-align: center;
+    border-bottom: 4px solid #d17700;
+    width: 96px;
+    font-size: 22px;
+    margin: 10px auto;
+    padding-bottom: 5px;
+}
+.skills_item h4{
+    color: rgb(223, 149, 12);
+}
+.skills_container{
+    width: 920px;
+    margin: 0 auto;
+}
+.skills_item{
+    float: left;
+    width: 230px;
+    text-align: center;
+}
+
