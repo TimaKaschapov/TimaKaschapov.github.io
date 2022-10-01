@@ -102,29 +102,37 @@ nav{
 .skills{    
     float: right;
     width: 100%;
-    height: 100%;
-    background: url(../img/foncase.png) no-repeat
+    height: 45%;
+    background: url(../img/foncase.png) no-repeat;
 }
 .skills_container h2{
-    display: block;
     text-align: center;
-    border-bottom: 4px solid #d17700;
     width: 96px;
     font-size: 22px;
+    margin: 15px auto;
+}
+.skills hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 30px auto;
 }
 .skills_item h4{
     color: rgb(223, 149, 12);
+    font-size: 22px;
 }
 .skills_container{
     width: 92px;
-    height: 110px;
+    height: 37px;
     margin: 0 auto;
 }
 .skills_item{
     float: left;
     width: 230px;
     text-align: center;
-    
+    font-size: 15px;
+    margin: 15px 120px 0px 120px;
 }
 .skills{
     display: block;
