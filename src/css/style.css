@@ -243,9 +243,11 @@ nav{
     margin: 0px auto;
 }
 .srok{
+    float: left;
     text-align: right;
     margin: 7px 535px 0px 0px;
 }
+
 .clear{
     clear: left;
 }
