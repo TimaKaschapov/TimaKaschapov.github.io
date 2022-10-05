@@ -243,9 +243,20 @@ nav{
     margin: 0px auto;
 }
 .srok{
-    float: left;
     text-align: right;
     margin: 7px 535px 0px 0px;
+}
+.srokone{
+    max-width: 890px;
+    float: left;
+    margin-left: 500px;
+
+}
+.sroktre{
+    max-width: 890px;
+    float: left;
+    margin-left: 500px;
+    margin-bottom: 25px;
 }
 
 .clear{
