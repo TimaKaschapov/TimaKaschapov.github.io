@@ -307,6 +307,17 @@ main{
     cursor: pointer;
     margin: 37px auto;
 }
+.about_container a{
+    transition: all;
+    transform: scale(1);
+}
+.about_container a:hover{
+    background: #344051;
+    color: #fff;
+}
+.about_container a:active{
+    transform: scale(1.1);
+}
 .skills{    
     float: right;
     width: 100%;
@@ -447,6 +458,14 @@ animation-delay: 1.2s;
     border-radius: 5px;
     font-size: 30px;
     margin: 14px 0px 0px 0px;
+    transition: all;
+    transform: scale(1);
+}
+.text_case input:hover{
+    background: #4e9a93;
+}
+.text_case input:active{
+    transform: scale(1.1);
 }
 .text_case2{
     float: left;
@@ -517,7 +536,7 @@ animation-delay: 1.2s;
     float: right;
     width: 100%;
     height: 35%;
-    background: url(../img/fonn.jpg) ;
+    background: url(../img/doski.jpg) ;
     background-attachment: fixed;
 }
 .statist h2{
@@ -538,7 +557,6 @@ animation-delay: 1.2s;
     width: 230px;
     text-align: center;
     font-size: 22px;
-    color: #eb8701;
     margin: 15px 120px 0px 120px;
     text-transform: uppercase;
     -webkit-animation: stat 3s ease forwards;
@@ -631,6 +649,16 @@ animation-delay: 1.2s;
     background: #d17700;
     width: 70px;
     margin: 20px auto;
+}
+.contact .tent{
+    transition: all;
+    transform: scale(1);
+}
+.contact .tent:hover{
+    background: #4e9a93;
+}
+.contact .tent:active{
+    transform: scale(1.1);
 }
 .input_text{
     position: relative;
