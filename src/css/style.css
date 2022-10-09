@@ -316,7 +316,7 @@ main{
     color: #fff;
 }
 .about_container a:active{
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 .skills{    
     float: right;
@@ -658,7 +658,7 @@ animation-delay: 1.2s;
     background: #4e9a93;
 }
 .contact .tent:active{
-    transform: scale(1.1);
+    transform: scale(0.8);
 }
 .input_text{
     position: relative;
