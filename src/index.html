@@ -6,9 +6,13 @@
     <meta name="author" content="Tima">
     <meta name="robots" content="all">
     <meta property="og:title" content="Это моя первая страница">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Начинающий Веб-разработчик</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,29 +33,61 @@
       </script>
     <header>
         <nav>
-            <div class="logo"> Timofey Kashapov</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="">Обо мне</a></li>
-                    <li><a href="">Улуги</a></li>
-                    <li><a href="">Кейс</a></li>
-                    <li><a href="">Прайс</a></li>
-                    <li><a href="">Отзывы</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo"> Timofey Kashapov</div>
+                    </div>
+                    <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="">Обо мне</a></li>
+                                <li><a href="">Улуги</a></li>
+                                <li><a href="">Кейс</a></li>
+                                <li><a href="">Прайс</a></li>
+                                <li><a href="">Отзывы</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Меню
+                            </a>
+                          
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="">Улуги</a></li>
+                                <li><a class="dropdown-item" href="">Кейс</a></li>
+                                <li><a class="dropdown-item" href="">Прайс</a></li>
+                                <li><a class="dropdown-item" href="">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="">Контакты</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
             </div>
+            
         </nav>
     </header>
     <main>
     <section class="main">
-        <div class="title_container">
-            <h1>Привет <br> Я ток начинаю)</h1>
-            <h4>Здесь должно что то быть написано</h4>
-            <form action="a">
-                <input type="submit" value="Обо мне">
-                <input type="submit" value="Мои работы">
-            </form> 
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 pt-5">
+                    <div class="title_container mt-5">
+                        <h1>Привет <br> Я ток начинаю)</h1>
+                        <h4><i class="fa fa-css3" aria-hidden="true"></i>Здесь должно что то быть написано</h4>
+                        <form action="a">
+                            <input type="submit" value="Обо мне">
+                            <input type="submit" value="Мои работы">
+                        </form> 
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
 </main>
     <div class="about">
@@ -209,5 +245,6 @@
     <footer>
         <p>А дальше карта, но ее пока что нет, но будет позже</p>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

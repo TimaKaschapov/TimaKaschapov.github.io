@@ -79,9 +79,8 @@ nav{
 }
 .logo{
     color: #fff;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 60px;
-    padding-left: 388px;
     float: left;
     -webkit-animation: comming 3s ease;
     -o-animation: comming 3s ease;
@@ -107,14 +106,14 @@ nav{
 }
 .menu{
     float: left;
-    padding-left: 452px;
+   
 }
 .menu li{
     float: left;
     line-height: 60px;
     color: #fff;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     -webkit-animation: topshift 3s ease forwards;
     -o-animation: topshift 3s ease forwards;
@@ -135,6 +134,28 @@ nav{
 }
 .menu li:nth-child(6){
     animation-delay: 2.0s;
+}
+.white-btn:visited{
+    color: white;
+}
+@media (max-width:991px){
+    .title_container , .title_container h4, .title_container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+    }
 }
 .menu li a{
     transition: all 0.1s;
@@ -181,16 +202,16 @@ main{
   }*/
 .title_container{
     float: left;
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
-    opacity: 0;
+    width: 100%;
+    /*opacity: 0;
     -webkit-animation: titlemove 1.5s ease forwards;
     -o-animation: titlemove 1.5s ease forwards;
     animation: titlemove 1.5s ease forwards;
     -webkit-animation-delay: 2.4s;
     -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;
+    animation-delay: 2.4s;*/
 }
 @keyframes titlemove{
     from{
@@ -203,8 +224,8 @@ main{
     }
 }
 .title_container h1{
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 72px;
+    font-weight: 600;
 }
 .title_container h4{
     margin-top: 40px;
