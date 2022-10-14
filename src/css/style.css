@@ -76,7 +76,7 @@ nav{
     height: 60px;
     background: #344051;
     position: fixed;
-    z-index: 1;
+    z-index: 15;
 }
 .logo{
     color: #fff;
@@ -240,7 +240,7 @@ main{
     transform: scale(1.1);
 }
 @media (max-width:991px){
-    .title_container h1, .title_container h4, .title_container input{
+    .title_container, .title_container h4, .title_container input{
         color: white;
         position: relative;
         z-index: 3;
@@ -262,7 +262,7 @@ main{
     }
 }
 
-.about{
+/*.about{
     -webkit-animation: abo 3s ease forwards;
     -o-animation: abo 3s ease forwards;
     animation: abo 3s ease forwards;
@@ -278,20 +278,35 @@ main{
         margin-left: 0px;
     }
     
-}
+}*/
 .about_container h2{
-    text-align: center;
-/*    border-bottom: 4px solid #d17700;*/
-    width: 96px;
-    font-size: 22px;
-    margin: 0 auto;
-    padding-bottom: 5px;
+    font-size: 33px;
+    margin: 110pz 0 30px 0;
+    text-transform: uppercase;
+    font-weight: 650;
+}
+.about_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 0 auto 60px;
+    opacity: 1;
 }
 
-.about_container{
-    width: 740px;
-    margin: 0 auto;
+.about_container a{
+    display: block;
+    width: 200px;
+    border: 2px solid #6d7682;
+    background: url(../img/ik.png) left no-repeat;
+    border-radius: 5px;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 37px auto;
+    text-decoration: none;
 }
+/*
 .about_container img{
     display: block;
     margin: 0 auto;
@@ -309,30 +324,10 @@ main{
   }
 }
 
-.about_container hr{
-    height: 4px;
-    border: none;
-    background: #d17700;
-    width: 60px;
-    margin: 30px auto;
-}
 
-.about_container p{
-    margin-top: 30px;
-    
-}
-.about_container a{
-    display: block;
-    width: 200px;
-    text-align: center;
-    border: 2px solid #6d7682;
-    background: url(../img/ik.png) left no-repeat;
-    border-radius: 5px;
-    color: #6d7682;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 37px auto;
-}
+
+
+
 .about_container a{
     transition: all;
     transform: scale(1);
