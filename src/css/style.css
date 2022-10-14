@@ -310,34 +310,35 @@ main{
     background: url(../img/foncase.png)center/cover no-repeat;
 }
 .skills_container{
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 96px;
 }
+
 .skills_container h2{
     text-align: center;
     width: 214px;
     font-size: 33px;
     margin: 0px auto 30px;
     text-transform: uppercase;
+    
 }
-.skills hr{
+.skills_container hr{
     height: 4px;
     border: none;
     background: #d17700;
-    width: 70px;
-    margin: 0px auto;
+    width: 80px;
+    margin: 0 auto 100px;
     opacity: 1;
 }
-.skills_item{
-    margin: 0 auto;
-}
+
 .skills_item img{
     margin-bottom: 20px;
     height: 40px;
 }
+
 .skills_item h3{
-    color: #cf7600;
     font-size: 18px;
+    color: #cf7600;
     margin-bottom: 20px;
 }
 .skills_item p{
