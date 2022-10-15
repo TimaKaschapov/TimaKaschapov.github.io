@@ -345,6 +345,143 @@ main{
     font-size: 16px;
 }
 
+
+
+
+
+
+
+
+/*.case{
+    -webkit-animation: cas 3s ease forwards;
+    -o-animation: cas 3s ease forwards;
+    animation: cas 3s ease forwards;
+    opacity: 0;
+}
+@keyframes cas{
+    from{
+        opacity: 0;
+        margin-left:-500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}*/
+.case{
+    padding-top: 80px;
+    padding-bottom: 128px;
+}
+.case{
+    width: 100%;
+
+}
+.case h2{
+    text-align: center;
+    width: 214px;
+    font-size: 33px;
+    margin: 0px auto 30px;
+    text-transform: uppercase;
+}
+.case hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 70px;
+    margin: 20px auto;
+    opacity: 1;
+}
+.case .textcs{
+    text-align: center;
+    font-size: medium;
+    margin: 35px 0px 35px 0px;
+}
+.text_case{
+    font-size: 15px;
+}
+.text_case h4{
+    font-size: 27px;
+    color: #384354;
+}
+.text_case .company{
+    font-size: 17px;
+    color: #384354;
+}
+.text_case input{
+    background: #63b5ae;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 14px 0px 0px 0px;
+    transition: all;
+    transform: scale(1);
+}
+/*.text_case input:hover{
+    background: #4e9a93;
+}
+.text_case input:active{
+    transform: scale(1.1);
+}*/
+.text_case2 h4{
+    font-size: 27px;
+    color: #384354;
+
+}
+.text_case2 .ttl{
+    font-size: 17px;
+    color: #384354;
+}
+
+
+
+
+
+
+
+
+
+.buy h2{
+    display: block;
+    text-align: center;
+    width: 250px;
+    font-size: 27px;
+    margin: 200px auto 10px auto;
+}
+.buy .calculator h3{
+    text-align: center;
+    font-size: 22px;
+}
+.mySelect{
+    display: block;
+    width: 890px;
+    height: 54px;
+    background: #eeeeee;
+    margin: 7px 0px 14px 494px;
+    align-items: center;
+}
+.calculator hr{
+    text-align: center;
+    height: 4px;
+    border: none;
+    background: #7a7977;
+    width: 900px;
+    margin: 0px auto;
+}
+.srok{
+    text-align: right;
+    margin: 7px 535px 0px 0px;
+}
+.srokone{
+    max-width: 890px;
+    float: left;
+    margin-left: 500px;
+
+}
+.sroktre{
+    max-width: 890px;
+    float: left;
+    margin-left: 500px;
+    margin-bottom: 25px;
+}
 /*
 .about_container img{
     display: block;
@@ -411,141 +548,8 @@ animation-delay: 1.2s;
     display: block;
 }
 
-.case{
-    -webkit-animation: cas 3s ease forwards;
-    -o-animation: cas 3s ease forwards;
-    animation: cas 3s ease forwards;
-    opacity: 0;
-}
-@keyframes cas{
-    from{
-        opacity: 0;
-        margin-left:-500px;
-    }
-    to{
-        opacity: 1;
-        margin-left: 0px;
-    }
-}
-.case h2{
-    display: block;
-    text-align: center;
-    width: 96px;
-    font-size: 22px;
-    margin: 450px auto 10px auto;
-    padding-bottom: 5px;
-}
-.case hr{
-    height: 4px;
-    border: none;
-    background: #d17700;
-    width: 70px;
-    margin: 20px auto;
-}
-.case img{
-    display: block;
-    margin: 0px 0px 0px 390px;
-}
-.case .textcs{
-    text-align: center;
-    font-size: medium;
-    margin: 35px 0px 35px 0px;
-}
-.text_case{
-    float: left;
-    width: 170px;
-    height: 200px;
-    text-align: center;
-    font-size: 15px;
-    margin: 0px 84px 0px 388px;
-}
-.text_case h4{
-    text-align: left;
-    font-size: 27px;
-    margin: 14px 0px 7px 0px;
-    color: #384354;
-}
-.text_case .company{
-    text-align: left;
-    font-size: 17px;
-    color: #384354;
-}
-.text_case input{
-    float: left;
-    background: #63b5ae;
-    border-radius: 5px;
-    font-size: 30px;
-    margin: 14px 0px 0px 0px;
-    transition: all;
-    transform: scale(1);
-}
-.text_case input:hover{
-    background: #4e9a93;
-}
-.text_case input:active{
-    transform: scale(1.1);
-}
-.text_case2{
-    float: left;
-    height: 200px;
-    text-align: center;
-    font-size: 15px;
-    margin: 15px 120px 0px 120px;
-}
-.text_case2 h4{
-    text-align: left;
-    font-size: 27px;
-    color: #384354;
-    margin: 14px 0px 14px 0px;
-}
-.text_case2 .ttl{
-    text-align: left;
-    font-size: 17px;
-    color: #384354;
-}
-.buy h2{
-    display: block;
-    text-align: center;
-    width: 250px;
-    font-size: 27px;
-    margin: 200px auto 10px auto;
-}
-.buy .calculator h3{
-    text-align: center;
-    font-size: 22px;
-}
-.mySelect{
-    display: block;
-    width: 890px;
-    height: 54px;
-    background: #eeeeee;
-    margin: 7px 0px 14px 494px;
-    align-items: center;
-}
-.calculator hr{
-    text-align: center;
-    height: 4px;
-    border: none;
-    background: #7a7977;
-    width: 900px;
-    margin: 0px auto;
-}
-.srok{
-    text-align: right;
-    margin: 7px 535px 0px 0px;
-}
-.srokone{
-    max-width: 890px;
-    float: left;
-    margin-left: 500px;
 
-}
-.sroktre{
-    max-width: 890px;
-    float: left;
-    margin-left: 500px;
-    margin-bottom: 25px;
-}
+
 
 .clear{
     clear: left;
