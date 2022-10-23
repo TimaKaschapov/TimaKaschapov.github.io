@@ -36,17 +36,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-lg-3 col-7">
-                        <div class="logo"> Timofey Kashapov</div>
+                        <div class="logo">Timofey Kashapov</div>
                     </div>
                     <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a href="">Обо мне</a></li>
-                                <li><a href="">Улуги</a></li>
-                                <li><a href="">Кейс</a></li>
-                                <li><a href="">Прайс</a></li>
-                                <li><a href="">Отзывы</a></li>
-                                <li><a href="">Контакты</a></li>
+                                <li><a href="#about_me">Обо мне</a></li>
+                                <li><a href="#skills">Навыки</a></li>
+                                <li><a href="#case">Кейс</a></li>
+                                <li><a href="#buy">Прайс</a></li>
+                                <li><a href="#review">Отзывы</a></li>
+                                <li><a href="#contact">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -57,12 +57,12 @@
                             </a>
                           
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="">Обо мне</a></li>
-                                <li><a class="dropdown-item" href="">Улуги</a></li>
-                                <li><a class="dropdown-item" href="">Кейс</a></li>
-                                <li><a class="dropdown-item" href="">Прайс</a></li>
-                                <li><a class="dropdown-item" href="">Отзывы</a></li>
-                                <li><a class="dropdown-item" href="">Контакты</a></li>
+                              <li><a class="dropdown-item" href="#about_me">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#skills">Навыки</a></li>
+                                <li><a class="dropdown-item" href="#case">Кейс</a></li>
+                                <li><a class="dropdown-item" href="#buy">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#review">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contact">Контакты</a></li>
                             </ul>
                           </div>
                     </div>
@@ -90,11 +90,11 @@
         
     </section>
 </main>
-    <div class="about">
+    <div class="about" id="about_me">
         <div class="about_container container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-6 col-ld-3 text-center ">
-                    <h2>Обо мне</h2>
+                    <h2 id="about_me">Обо мне</h2>
                     <hr>
                 </div>
             </div>
@@ -113,7 +113,7 @@
             </div>
         </div>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="skills_container container">
             <h2>Что я умею</h2>
             <hr>
@@ -142,7 +142,7 @@
         </div>
     </div>
     
-    <div class="case">
+    <div class="case" id="case">
         <div class="case_container container">
             <h2 class="text-center">Кейсы</h2>
         <hr>
@@ -191,7 +191,7 @@
         </div>
     </div>
     
-    <div class="buy">
+    <div class="buy" id="buy">
         <div class="container justify-content-center text-center">
             <h2>Расчет стоимости</h2>
             <div class="col-12 ">
@@ -232,7 +232,7 @@
                         </div>
                         <div class="row justify-content-center text-center">
                             <div class="col-12 ">
-                                <button class="mx-auto">Оставить заявку</button>
+                                <button class="mx-auto" onclick="getAnswers()">Оставить заявку</button>
                             </div>
                         </div>
                     </div>
@@ -242,7 +242,7 @@
         
     </div>
     
-    <div class="statist">
+    <div class="statist" id="statist">
         <div class="statist_container container">
         <h2>Немного статистики</h2>
         <hr>
@@ -270,7 +270,7 @@
         </div>
     </div>
     </div>
-    <div class="review">
+    <div class="review" id="review">
         <div class="review_container container">
             <h2>Отзывы</h2>
             <hr>
@@ -288,7 +288,7 @@
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact_container container text-center">
             <h2>Мои контакты</h2>
         <hr>
@@ -328,6 +328,6 @@
         <p>А дальше карта, но ее пока что нет, но будет позже</p>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/calc.js"></script>
+    <script src="js/calc.js" ></script>
 </body>
 </html>
