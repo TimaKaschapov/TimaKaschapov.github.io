@@ -430,7 +430,36 @@ main{
     font-size: 17px;
     color: #384354;
 }
+.description_left h3{
+    font-size: 25px;
+}
 
+.description_left p{
+    font-size: 17px;
+    margin: 16px 0;
+}
+
+.description_left a, .calculator_footer button{
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    background: #63b5ae;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    
+}
+.description_right h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.description_right p{
+    font-size: 20px;
+
+}
 
 
 
@@ -445,33 +474,63 @@ main{
     padding-bottom: 100px;
     font-weight: 650;
 }
-.buy .calculator h3{
-    text-align: center;
-    font-size: 22px;
+.calculator{
+    max-width: 890px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
-.mySelect{
+
+.calculator h3{
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.calculator select{
+    margin-bottom: 44px;
+}
+
+.calculator hr{
+    height: 2px;
+    border: none;
+    background: #eee;
     width: 100%;
+    margin: 0 auto 24px;
+    opacity: 1;
+    
+}
+
+.mySelect{
+    display: block;
+    width: 100%;
+    max-width: 890px;
     height: 54px;
     background: #eeeeee;
+    padding-left: 24px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background:  url(../img/select.png) 98% 54%/auto no-repeat, #eee;
 }
-.calculator hr{
+.days, .price{
+    margin-bottom: 0px;
+    font-size: 21px;
+    
+}
+.calculator_footer p{
+    margin-bottom: 0;
+}
+.calculator_footer .text{
+    float: left;
+}
 
-    height: 4px;
-    border: none;
-    background: #7a7977;
+.calculator_footer .digit{
+    font-size: 29px;
+    float: right;
+}
 
-}
-.srok{
-    text-align: right;
-    margin: 7px 535px 0px 0px;
-}
-.srokone{
-    max-width: 890px;
-    margin-left: 500px;
-
-}
-.sroktre{
-    max-width: 890px;
+.calculator_footer button{
+    width: 200px;
 }
 
 
