@@ -89,8 +89,8 @@
         </div>
         
     </section>
-</main>
-    <div class="about" id="about_me">
+    </main>
+    <div class="about section" id="about_me">
         <div class="about_container container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-6 col-ld-3 text-center ">
@@ -113,7 +113,7 @@
             </div>
         </div>
     </div>
-    <div class="skills" id="skills">
+    <div class="skills section" id="skills">
         <div class="skills_container container">
             <h2>Что я умею</h2>
             <hr>
@@ -142,7 +142,7 @@
         </div>
     </div>
     
-    <div class="case" id="case">
+    <div class="case section" id="case">
         <div class="case_container container">
             <h2 class="text-center">Кейсы</h2>
         <hr>
@@ -191,31 +191,31 @@
         </div>
     </div>
     
-    <div class="buy" id="buy">
+    <div class="buy section" id="buy">
         <div class="container justify-content-center text-center">
             <h2>Расчет стоимости</h2>
             <div class="col-12 ">
                 <div class="calculator">
                     <h3>Тип сайта</h3>
-                    <select class="mySelect" name="site" id="typeSite">
-                        <option value="qwe" selected disabled>Выберите пункт</option>
-                        <option value="qwe">1</option>
-                        <option value="qwe">2</option>
-                        <option value="qwe">3</option>
+                    <select id="select1" class="mySelect" name="site" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="1000" days="2">Сайт-визитка</option>
+                        <option value="2000" days="4">Корпоративный</option>
+                        <option value="5000" days="6">Интернет-магазин</option>
                     </select>
                     <h3>Дизайн</h3>
-                    <select class="mySelect" name="site" id="typeSite">
-                        <option value="qwe" selected disabled>Выберите пункт</option>
-                        <option value="qwe">1</option>
-                        <option value="qwe">2</option>
-                        <option value="qwe">3</option>
+                    <select id="select2" class="mySelect" name="site" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2500" days="2">Шаблонный</option>
+                        <option value="3500" days="3">Уникальный</option>
+                        <option value="5000" days="4">WOW-Дизайн</option>
                     </select>
                     <h3>Адаптивность</h3>
-                    <select class="mySelect" name="site" id="typeSite">
-                        <option value="qwe" selected disabled>Выберите пункт</option>
-                        <option value="qwe">1</option>
-                        <option value="qwe">2</option>
-                        <option value="qwe">3</option>
+                    <select id="select3" class="mySelect" name="site" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="1000" days="2">Компьютер</option>
+                        <option value="2500" days="3">Мобильный</option>
+                        <option value="5000" days="4">Полный</option>
                     </select>
                     <hr>
                     <div class="calculator_footer">
@@ -232,7 +232,7 @@
                         </div>
                         <div class="row justify-content-center text-center">
                             <div class="col-12 ">
-                                <button class="mx-auto" onclick="getAnswers()">Оставить заявку</button>
+                                <button class="mx-auto" onclick="">Оставить заявку</button>
                             </div>
                         </div>
                     </div>
@@ -270,7 +270,7 @@
         </div>
     </div>
     </div>
-    <div class="review" id="review">
+    <div class="review section" id="review">
         <div class="review_container container">
             <h2>Отзывы</h2>
             <hr>
@@ -288,7 +288,7 @@
             </div>
         </div>
     </div>
-    <div class="contact" id="contact">
+    <div class="contact section" id="contact">
         <div class="contact_container container text-center">
             <h2>Мои контакты</h2>
         <hr>
@@ -302,7 +302,7 @@
         </div>
         <div class="col-12 col-sm-10 col-md-8">
             <div class="input_text2">
-                <textarea class="textarea" name="" id="" cols="30" rows="10">Сообщение</textarea>
+                <textarea class="textarea" placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea>
             </div>
         </div>
             
@@ -327,7 +327,10 @@
     <footer>
         <p>А дальше карта, но ее пока что нет, но будет позже</p>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/calc.js" ></script>
+    <script src="js/spin.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/calcul.js" ></script>
 </body>
 </html>

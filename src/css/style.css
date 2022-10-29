@@ -154,6 +154,7 @@ nav{
 }
 .menu li a:active{
     transform: scale(1.1);
+    color: #e88604;
 }
 main{
     width: 100%;
