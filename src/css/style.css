@@ -146,16 +146,20 @@ nav{
     transform: scale(1);
     display: inline-block;
 }
+.menu li a.active{
+    color: red;
+    
+}
 .menu li a:visited{
     color: white;
 }
-.menu li a:hover{
+/*.menu li a:hover{
     color: #e88604;
 }
 .menu li a:active{
     transform: scale(1.1);
     color: #e88604;
-}
+}*/
 main{
     width: 100%;
     height: 100%;
