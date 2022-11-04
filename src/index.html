@@ -12,6 +12,7 @@
     <title>Начинающий Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
 </head>
@@ -90,8 +91,8 @@
         
     </section>
     </main>
-    <div class="about section element-animation" id="about_me">
-        <div class="about_container container">
+    <div class="about section" id="about_me">
+        <div class="about_container container element-animation">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-6 col-ld-3 text-center ">
                     <h2 id="about_me">Обо мне</h2>
@@ -112,9 +113,32 @@
                 </div>
             </div>
         </div>
+        <!-- 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
-    <div class="skills section element-animation" id="skills">
-        <div class="skills_container container">
+  </div>-->
+    </div>
+    <div class="skills section" id="skills">
+        <div class="skills_container container element-animation">
             <h2>Что я умею</h2>
             <hr>
             <div class="row justify-content-center text-center">
@@ -141,9 +165,51 @@
             </div>
         </div>
     </div>
-    
-    <div class="case section element-animation" id="case">
-        <div class="case_container container">
+    <div class="remodal itb_popup_form_wrapper" data-remodal-id="form-callback">
+        <div data-remodal-action="close" class="remodal-close js-close-campaign"></div>
+        <div class="itb_popup_form_tablet_image"><img data-src="images/tablet.png" alt="" /></div>
+        <div class="itb_popup_form_content ">
+            <div class="itb_popup_form_title">Заполните форму и наш сотрудник свяжется с Вами.</div>
+            <div class="itb_default_form itb_js_form_ctn">
+                <form name="tender_form" data-title="Заявка на подбор тендера" action="">
+                    <input type="hidden" name="action" value="Заявка на подбор тендера">
+                    <input type="email" class="default-input itb_mail_field" name="FORMS[tender][email]" value=""
+                        placeholder="Ваш e-mail" size="20" />
+
+                    <div class="itb_default_form_item itb_js_form_item">
+                        <input type="name" class="default-input " name="FORMS[tender][NAME]" value=""
+                            placeholder="Ваше имя" size="20" />
+
+                    </div>
+                    <div class="itb_default_form_item itb_js_form_item">
+                        <input type="mail" class="default-input " name="FORMS[tender][MAIL]" value=""
+                            placeholder="Email" size="20" />
+
+                    </div>
+                    <div class="itb_default_form_item itb_js_form_item">
+                        <input type="tel" class="default-input itb_js_inputmask" name="FORMS[tender][PHONE]"
+                            value="" placeholder="Телефон" size="20" />
+
+                    </div>
+                    <div class="itb_default_form_checkbox_wrap">
+                        <div class="itb_default_form_checkbox">
+                            <input id="tender_form_agreement" class="itb_js_form_item_checkbox" checked
+                                type="checkbox" name="FORMS[tender][agreement_chbx]" />
+                            <label for="tender_form_agreement">Я принимаю <a href="/user">условия передачи
+                                    информации</a></label>
+                        </div>
+                    </div>
+                    <div class="itb_default_form_button">
+                        <div class="itb_main_red_btn_wrap">
+                            <a class="itb_main_red_btn itb_js_send_form" href="#"><span>ЗАКАЗАТЬ ЗВОНОК</span></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="case section" id="case">
+        <div class="case_container container element-animation">
             <h2 class="text-center">Кейсы</h2>
         <hr>
         <div class="row justify-content-center text-center">
@@ -158,7 +224,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/zacat.jpg" class="d-block w-100" alt="...">
+                <img src="img/zacat.jpg" class="d-block w-100 image-link" href="img/zacat.jpg" alt="...">
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-3 col-lg-2 description_left">
                         <h3>Клиент:</h3>
@@ -175,7 +241,7 @@
               </div>
               <div class="carousel-item">
 
-                <img src="img/zacat1.jpg" class="d-block w-100" id='image' alt="...">
+                <img src="img/zacat1.jpg" class="d-block w-100 image-link" href="img/zacat1.jpg" alt="...">
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-3 col-lg-2 description_left">
                         <h3>Клиент:</h3>
@@ -191,7 +257,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/fon1.jpg" class="d-block w-100" id='image' alt="..."><a href="img/fon1.jpg" data-lightbox="roadtrip">Ejhkghds</a>
+                <img src="img/fon1.jpg" class="d-block w-100 image-link" href="img/fon1.jpg" alt="...">
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-3 col-lg-2 description_left">
                         <h3>Клиент:</h3>
@@ -217,32 +283,11 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-            <!--<div class="row justify-content-center">
-            <div class="text_case">
-                    <div class="col-12 col-md-3 col-lg-2 description_left">
-                        <h4>Клиент</h4>
-                        <p class="company">Компания</p>
-                        <h4>Веб-сайт</h4>
-                        <p class="company">http://www.chickpuripurira.com</p>
-                        <form action="c">
-                            <input type="submit" value="Визит на сайт">
-                        </form>
-                    </div>
-            </div>
-            <div class="text_case2">
-                <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
-                            <h4>Название проекта</h4>
-                            <p class="ttl">Lorem ipsum dolor sit amet.</p>
-                        </div>
-            </div>
-            </div>-->
-            
             </div>
             <br>
             
            
         </div>    
-        </div>
     </div>
     
     <div class="buy section element-animation" id="buy">
@@ -296,8 +341,8 @@
         
     </div>
     
-    <div class="statist element-animation" id="statist">
-        <div class="statist_container container">
+    <div class="statist" id="statist">
+        <div class="statist_container container element-animation">
         <h2>Немного статистики</h2>
         <hr>
         <div class="row justify-content-center text-center">
@@ -324,8 +369,8 @@
         </div>
     </div>
     </div>
-    <div class="review section element-animation" id="review">
-        <div class="review_container container">
+    <div class="review section" id="review">
+        <div class="review_container container element-animation">
             <h2>Отзывы</h2>
             <hr>
             <div class="row justify-content-center text-center">
@@ -380,8 +425,8 @@
             </div>
         </div>
     </div>
-    <div class="contact section element-animation" id="contact">
-        <div class="contact_container container text-center">
+    <div class="contact section" id="contact">
+        <div class="contact_container container text-center element-animation">
             <h2>Мои контакты</h2>
         <hr>
         <p>Отправьте мне сообщение!</p>

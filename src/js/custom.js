@@ -23,7 +23,7 @@ $(document).ready(function () {
     let observer = new IntersectionObserver(onEntry, options);
     let elements = $('.element-animation');
     elements.each((i,el) => {
-        observer.observer(el)
+        observer.observe(el)
     });
     function onEntry(entry) {
         entry.forEach(change => {
@@ -33,10 +33,45 @@ $(document).ready(function () {
         });
       }
 
-      lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-      })
+      $(document).ready(function() {
+        $('.image-link').magnificPopup({type:'image'});
+      });
+
+      window.addEventListener('load', function() { //дожидаемся полной загрузки страницы
+        if (getCookie('modal_shown') == null) { //проверяем наличие куки и если её нет, то
+            setTimeout(function() { //ждём 15 секунд
+                setCookie('modal_shown', 'yes', 1); //ставим куку
+                $('#modal-order').modal('show'); //вызываем модально окно
+            }, 15000);
+        }
+    });
+    
+    function setCookie(name, value, days) {
+        var expires = '';
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + (value || '') + expires + '; path=/';
+    }
+    
+    function getCookie(name) {
+        var nameEQ = name + '=';
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+    
+    function eraseCookie(name) {
+        setCookie(name, '', {
+            'max-age': -1
+        });
+    }
 });
 
 

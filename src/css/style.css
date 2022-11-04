@@ -12,7 +12,7 @@ body{
     /* фоновый цвет элемента */
     background: #e0e0e0;
     /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-    z-index: 1001;
+    z-index: 16;
   }
   
   .preloader__row {
@@ -789,7 +789,7 @@ animation-delay: 1.2s;
 
 
 .element-animation{
-    opacity: 1;
+    opacity: 0;
 }
 .element-animation.show-animation{
     opacity: 1;
