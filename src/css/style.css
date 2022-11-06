@@ -795,3 +795,6 @@ animation-delay: 1.2s;
     opacity: 1;
     transition: 1s;
 }
+.knopka{
+    display: none;
+}

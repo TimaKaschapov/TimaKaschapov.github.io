@@ -37,33 +37,13 @@ $(document).ready(function () {
         $('.image-link').magnificPopup({type:'image'});
       });
 
-      $(document).ready(function(){
-        var pp     = $("#pp"),
-            bg     = $("#pp-bg");
-     
-        function pp_hide(pp, bg){
-            pp.animate({top: "-550px"}, 1000, function(){bg.fadeOut(1000);});
+
+
+    function modalShow(){
+        $("gg").click();
         }
-     
-        function pp_show(pp, bg){
-            pp.animate({top: "150px"}, 2000);
-            bg.fadeIn(1000).click(function(){pp_hide(pp, bg)});
-        }
-     
-        if ( $.cookie('visit') == undefined ){
-          setTimeout(function(){
-            $.cookie('visit', true);
-            pp_show(pp, bg);
-        }, 1000);
-        } else {
-            $('body').append('<h1>Вы у нас уже были :)</h1><a href="#" id="remove_cookie">Удалить куки!</a>');
-            $('#remove_cookie').click(function(e){
-                e.preventDefault();
-                $.removeCookie('visit');
-                $(this).after("<span>Куки удалены успешно! Перезагрузите страницу :)</span>").remove();
-            });
-        }
-    });
+        
+        setTimeout(modalShow, 1000);
 });
 
 
