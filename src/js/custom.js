@@ -40,10 +40,10 @@ $(document).ready(function () {
 
 
     function modalShow(){
-        $("gg").click();
+        $("#gg").click();
         }
-        
         setTimeout(modalShow, 1000);
+
 });
 
 
